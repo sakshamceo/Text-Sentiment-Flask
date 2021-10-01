@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color:hsla(0,100%,50%,0.5);">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .centered {
+        position: relative;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        color: white;
+      }
+      .header {
+        color: black;
+      }
+ 
+      h1 {
+        color: rgb(29, 18, 18);
+        font-family: 'Cookie', cursive;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-align: center;
+      }
+      #demo {
+        color: rgb(9, 10, 10);
+        font-family: 'Pacifico', cursive;
+        font-size: 38px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        text-justify: inter-word;
+      }
+      .form-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="centered">
+        <div class="text-center text-white">
+          <title>sentiment analysis app</title>
+        </div>
+        <h1 class="display-3">Text Sentiment Analysis</h1>
+
+        <form method="POST" onSubmit="return validate();" class="form">
+          <div class="form-div">
+            <input type="text" name="text" class="form-control mr-2" placeholder="Type Any Sentence"  />
+            <button type="submit" class="btn btn-outline-primary" onclick="this.form.submit();">
+              Submit
+            </button>
+          </div>
+        </form>
+        <br />
+        <br />
+        <p id="demo">{{ variable }}</p> <br><br><br><br><br>
+      </div>
+      <footer>
+      <div class="card text-center" style="opacity: 0.5;">
+        <div class="card-body">
+          <h5 class="card-title" style=" font-family: 'Cookie', cursive;">Made With Love</h5>
+          <h3 class="card-text" style=" font-family: 'Cookie', cursive;">Saksham Garg , 3rd year B.Tech Information Technolgy</h3><br>
+          <a href="#" class="btn btn-primary">View Repository</a>
+        </div>
+      </div>
+    </footer>
+    </div>
+    
+  </body>
+</html>
